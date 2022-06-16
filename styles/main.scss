@@ -9,15 +9,14 @@ html {
         width: 100vw;
         height: 100vh;
         height: 100dvh;
-        overflow: auto;
         main {
             box-sizing: border-box;
             height: 100%;
             width: 100%;
-            padding: 50px 20%;
+            padding: 50px 20% 75px 20%;
             overflow-y: scroll;
             @media (max-width: 1000px) {
-                padding: 50px 24px;
+                padding: 50px 24px 75px 20%;
             }
             h1 {
                 text-align: center;
@@ -42,22 +41,31 @@ html {
                 border: 1px solid gray;
                 border-radius: 4px;
             }
-        }
-        footer {
-            position: relative;
-            width: 100%;
-            height: 75px;
-            background-color: lightgray;
-            p {
-                text-align: center;
-                line-height: 75px;
-            }
-            p.copyright {
-                position: absolute;
-                line-height: normal;
+            footer {
+                position: fixed;
                 bottom: 0;
-                right: 0;
-                padding: 5px;
+                left: 0;
+                width: 100%;
+                height: 25px;
+                background-color: #2a2b3d;
+                p.txt {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    padding: 0;
+                    margin: 0;
+                    color: #F8F8F0;
+                }
+                p.copyright {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    padding: 0;
+                    margin: 0;
+                    color: #F8F8F0;
+                }
             }
         }
     }
