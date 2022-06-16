@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitとGitHubってなに？</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <main>
+        <h1>GitとGitHubってなに？</h1>
+
+        <h2>まずGitってなーに？</h2>
+        <p>Gitを一言で表すとバージョン管理システムです</p>
+        <p>つまり，Gitを使ってファイルの保存などが行えれます</p>
+        <p>Gitを使ってファイルの保存を行うと，誰が，いつ，どこを，どのように変更したのかが記録されます</p>
+        <p>その履歴を使って，今変更した箇所をすべて帳消しにしたり，ある履歴で変更した箇所だけを削除したり，ある履歴まで戻ることができます</p>
+        <p>この機能は過去に追加した機能を削除したい，戻りたい場合にも便利ですが，一番便利だと思っている点はちょっとだけテストで実装したいけど，だめだったら削除したいという場合だと思います</p>
+        <p>たくさんの変更をテストで実装して，それを削除したい場合に変更した場所を一生懸命に探してバックスペースキーを連打しなくてもコマンド一発で過去の履歴からの変更点を消してくれます</p>
+        <p>マリオの中間ポイント的な感じです</p>
+
+        <p><br>他のメリットとして，マージが簡単にできる点です</p>
+        <p>ファイルは通常上書き保存な性質を持っています</p>
+        <p>例えば同じ名前のtest.txtファイルを2人で実装する場合に，同じディレクトリに保存をしてしまうと一番最後に保存したファイルが上書き保存により残ってしまうため，はじめの人の変更点は反映されないことになってしまいます</p>
+        <iframe frameborder="0" style="width:100%;height:1104px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R7VtLj5s6FP413lYYgzFLIEm7qVRpFvfeJQpugkrCiHiaTH%2F9tcHmYcNMRkqcEVQaaezj92f7nO%2F4EICSw%2BVrlT7vv5cZLYDrZBeAVsB1XRhg%2Fk9IXhsJxAg2kl2VZ1LWCZ7yP1QKHSl9yTN6GlRkZVmw%2FHko3JbHI92ygSytqvI8rPazLIajPqc7agietmlhSv%2FJM7ZvpMQNOvk3mu%2F2amSIw6bkkKrKciWnfZqV554IrQFKqrJkTepwSWgh0FO4NO02E6XtxCp6ZNc0cJsGv9PiRa5Nzou9qsVW5csxo6K%2BA1B83ueMPj2nW1F65vvLZXt2KHgO8qTsjlaMXianBNuF8iNCywNl1Suvos6HI7GRp8OT2XOHNFTw7fsoYylM5e7u2q47AHhCYjCOh2fgweiJfWEXZuDCV8iGiz%2BxqvxFk7IoKy45lkdeM%2F6ZF4UmSot8d%2BTZLUeEcnks8Mr58YpkwSHPMjHMKNrD%2FbgF4HgIuGsCjkfwdm8At2%2FAHc0YZzTE2b8OZ3QDnImBc7IcnCGyB3Ro6tM1AgSCEMlEtG41ihLEKkVWrQysMYhCEG7AmgCCQNwUuSDkPfqiQlMUcaGvxghUYiMTxJvvNkNfU1vQ3GZ3zFDcYp%2FVWJ%2FJcJIhHmhEj9%2FPcEK4QMsJPQ1yx57phCZ1m7HthFBD2qJOh2hJ1lNH2htRq3dD2qTfkTJpvrJ%2FrSHdxD1rOWoSG2uJAYlriS%2BsaNu%2BtZbxWknC%2BW6rxom80KaxNGl%2BPF%2BkDVUVWLxA%2BPPRkpaHPIaXBAvkJUingjZ5ielrzpiXIP%2BBvMR0NmfMS3SkbfISdS8GBmyal6z%2B8pLrH2uCBxIT13RaV%2FOF2rhBFh8gXdOHmmb2JBGXI0wAN2P8chACwvZKxbWE3xio6oR1Ef8LZD8RkpIoUZKNqkNUUdTr0APxph6CX1Z%2BEUnvjrY3cgPipJ5YIxlecX5T26IonlYNopL92YdSQrp3xt56VGK2xz7wB6eejHChlqLf%2FNibDq0BtG0%2BDjVyiK3y8YWFfDRfEFukh67pC874lutIBzbpoeljzvh9wzjTFt83RgKZD9enrva%2BgUcMzB31qekEzlmfahQWW7zlqo%2BF6FMd6RG%2F7G5IL8ot05EOLHIE5L6vT%2Bkxi8Q3cx2Ahv6kmfG9nLZ612FptaNq6mgckd6K%2FZEVK1lFi5Tlv4dDjsEgR%2FhR5nwynR%2BsxUKwpyF5Kl%2BqLZWtOjCNjjzdEjpaR82ajY7qXWmXfd1Gmf7zGy9Q69orXAkHU7wycf%2FZmfhEBHXNI6gSnnIzZ8xiEH6fL8KxQ3iTa%2FehOOff3Xxfh75vrO63maZH%2BzEdSi85%2B1dg8cX3Apn%2Fr8470JP51UWCVWdee5kftMr5nMUm9NC8RiM3aq5%2FIh%2BlkaHnj%2B%2FfRzUyDLWOdNV%2BQ438CUOt%2BqfTodWnHbTEUKv%2B8XRoMdSKFhVq1T9hCW3y5EWFWo0PqB2LbrbS2INPqDn%2FIYBEddAkFmkZT1lNhD%2BayEgT9VABEdFcBjveps6%2B4EwiMNMM5qmilnXBQZyKN%2BkiK20%2FeDKaS7x2Hm%2BTvql5bIQkxmplveZdEOqN4fF8Dy7Rz%2B0ID0R3O7jLerUwdMT9osk82%2F0irqFq3Q8L0fp%2F"></iframe>
+        <p>また，保存してもらうディレクトリを工夫しても，マージする作業者はとても大変な作業になります</p>
+        <p>一つ一つのファイルを目視で確認し，変更された箇所を抜き取り，一つファイルにまとめ上げるのです</p>
+        <p>そのようなことを上手に管理してくれるのがGitなのです</p>
+        <p>複数人で1つのファイルを編集している場合でも，Gitは差分を読み取り，自動的にマージ作業を行ってくれます</p>
+        <p>ですが，最終的な決定権は人間にあります</p>
+        <p>Gitが差分を取ってマージをしようとしたが，どちらのファイルの変更が正しいのかがわからなくなった場合にはコンフリクト(日本語訳では衝突)が発生します</p>
+        <p>コンフリクトが発生してしまった場合，私達人間がどちらが正しいのかを判断しなければなりません</p>
+
+        <h2>じゃあGitHubってなーに？</h2>
+        <p>よくわからない人はおそらくGitとGtiHubは同じものだと思っている人も多いかもしれません</p>
+        <p>Gtiはバージョン管理システムであり，ファイルを保存するソフトウェアですが，実はGit自体には他の人とファイルを共有する仕組みはありますが方法がありません</p>
+        <p>そこで使われるのがGitHubです</p>
+        <p>Gitで作った履歴をGitHubにアップロードして，様々な人とファイルを共有します</p>
+        <p>そしてその共有した歴史を他の人がダウンロードして，ダウンロードした歴史をもとに実装などをして変更した歴史を再びGitHubへアップロードして，GitHub上でファイルをマージします</p>
+        <p>もっと簡単に言うと，他人とファイルを共有するために僕たちが使うGoogle DriveやOnedrive,DropBoxと言ったクラウドサービスのGitバージョンと言った感じです</p>
+
+        <h2>まとめ</h2>
+        <ul>
+            <li>Gitは歴史を作るバージョン管理システム！</li>
+            <li>GitHubはGitで作った歴史を他の人と共有するクラウドサービス！</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>無断複製，転載，配布等を禁じます</p>
+        <p class="copyright">&copy; 2022 nono2224</p>
+    </footer>
+</body>
+
+</html>
