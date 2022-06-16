@@ -20,7 +20,7 @@ html body main {
 }
 @media (max-width: 1000px) {
   html body main {
-    padding: 50px 24px 75px 20%;
+    padding: 50px 24px 75px 24px;
   }
 }
 html body main h1 {
