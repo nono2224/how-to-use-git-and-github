@@ -25,21 +25,22 @@ html {
                 border-left: gray 2px solid;
                 border-bottom: 1px solid lightgray;
                 padding-left: 4px;
-                margin: 80px 0 10px 0;
+                margin-top: 80px;
                 font-weight: lighter;
             }
             h3 {
-                margin: 20px 0 5px 10px;
+                margin-top: 20px;
+                margin-left: 10px;
                 border-bottom: 1px solid lightgray;
                 font-weight: lighter;
             }
             ol,
             li {
-                margin: 5px 0;
+                margin-top: 5px;
                 margin-left: 50px;
             }
             p {
-                margin: 5px 0;
+                margin-top: 5px;
                 margin-left: 20px;
             }
             iframe {
